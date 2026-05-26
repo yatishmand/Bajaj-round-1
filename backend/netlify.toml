@@ -1,0 +1,21 @@
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/tickets/*"
+  to = "/.netlify/functions/api/tickets/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/tickets"
+  to = "/.netlify/functions/api/tickets"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/api"
+  status = 200
+  force = true
