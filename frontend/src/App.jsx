@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://deskflow-yatish-backend.netlify.app';
 const STATUSES = ['open', 'in_progress', 'resolved', 'closed'];
 const STATUS_LABELS = {
   open: 'Open',
